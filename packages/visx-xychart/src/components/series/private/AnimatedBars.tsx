@@ -86,7 +86,14 @@ function AnimatedBarsRounded<XScale extends AxisScale, YScale extends AxisScale>
           bottom={radiusBottom}
           left={radiusLeft}
         >
-          {({ path }) => <AnimatedPath d={path} fill={fill} {...pathProps} />}
+          {({ path }) => (
+            <AnimatedPath
+              className="visx-bar visx-bar-rounded"
+              d={path}
+              fill={fill}
+              {...pathProps}
+            />
+          )}
         </BarRounded>
       ))}
     </>
