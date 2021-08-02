@@ -71,6 +71,7 @@ describe('withBoundingRects()', () => {
   });
 
   test('it should set rect and parentRect to empty state if no getBoundingClient()', () => {
+    // eslint-disable-next-line react/jsx-no-useless-fragment
     const Component = () => <>{''}</>;
     const HOC = withBoundingRects(Component);
     const wrapper = mount(<HOC />);
