@@ -17,7 +17,7 @@ describe('<Tooltip />', () => {
     | {
         props?: Partial<TooltipProps<object>>;
         context?: Partial<TooltipContextType<object>>;
-        dataEntries?: DataRegistryEntry<any, any, any>[];
+        dataEntries?: DataRegistryEntry<unknown, unknown, unknown>[];
       }
     | undefined;
 
